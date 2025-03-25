@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="Gallery.css">
+    <nav>
+        <a href="About.html">About us</a>|
+        <a href="index.html">Home</a>|
+        <a href="Caleb" >Contact Us</a>|
+      </nav>
+</head>
+<body>
+    <h1>Family Gallery</h1>
+    <p>Every Picture Tells a Story – Celebrating the Love, Laughter, and Life We Share.</p>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="images/1.jpg" alt="Family Photo 1" onclick="openLightbox(0)">
+        </div>
+        <div class="gallery-item">
+            <img src="images/2.jpg" alt="Family Photo 2" onclick="openLightbox(1)">
+        </div>
+        <div class="gallery-item">
+            <img src="images/3.jpg" alt="Family Photo 3" onclick="openLightbox(2)">
+        </div>
+        <div class="gallery-item">
+            <img src="images/4.jpg" alt="Family Photo 3" onclick="openLightbox(3)">
+        </div>
+        <div class="gallery-item">
+            <img src="images/5.jpg" alt="Family Photo 3" onclick="openLightbox(4)">
+        </div>
+        <div class="gallery-item">
+            <img src="images/6.jpg" alt="Family Photo 3" onclick="openLightbox(5)">
+        </div>
+        <div class="gallery-item">
+            <img src="images/7.jpg" alt="Family Photo 3" onclick="openLightbox(6)">
+        </div>
+        <div class="gallery-item">
+            <img src="images/8.jpg" alt="Family Photo 3" onclick="openLightbox(7)">
+        </div>
+        <div class="gallery-item">
+            <img src="images/9.jpg" alt="Family Photo 3" onclick="openLightbox(8)">
+        </div>
+        <div class="gallery-item">
+            <img src="images/10.jpg" alt="Family Photo 3" onclick="openLightbox(9)">
+        </div>
+        <div class="gallery-item">
+            <img src="images/11.jpg" alt="Family Photo 3" onclick="openLightbox(10)">
+        </div>
+        <div class="gallery-item">
+            <img src="images/12.jpg" alt="Family Photo 3" onclick="openLightbox(11)">
+        </div>
+        <div class="gallery-item">
+            <img src="images/13.jpg" alt="Family Photo 3" onclick="openLightbox(12)">
+        </div>
+        <div class="gallery-item">
+            <img src="images/14.jpg" alt="Family Photo 3" onclick="openLightbox(13)">
+        </div>
+        <div class="gallery-item">
+            <img src="images/15.jpg" alt="Family Photo 3" onclick="openLightbox(14)">
+        </div>
+        <div class="gallery-item">
+            <img src="images/16.jpg" alt="Family Photo 3" onclick="openLightbox(15)">
+        </div>
+        <div class="gallery-item">
+            <img src="images/17.jpg" alt="Family Photo 3" onclick="openLightbox(16)">
+        </div>
+        <div class="gallery-item">
+            <img src="images/18.jpg" alt="Family Photo 3" onclick="openLightbox(17)">
+        </div>
+    </div>
+
+    <!-- Lightbox Overlay -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
+        <button class="nav-btn prev-btn" onclick="changeImage(-1, event)">&#10094;</button>
+        <img id="lightbox-img" src="1.jpg" alt="Enlarged Image">
+        <button class="nav-btn next-btn" onclick="changeImage(1, event)">&#10095;</button>
+    </div>
+
+    <script>
+        const images = [
+            'images/1.jpg',
+            'images/2.jpg',
+            'images/3.jpg',
+            'images/4.jpg',
+            'images/5.jpg',
+            'images/6.jpg',
+            'images/7.jpg',
+            'images/8.jpg',
+            'images/9.jpg',
+            'images/10.jpg',
+            'images/11.jpg',
+            'images/12.jpg',
+            'images/13.jpg',
+            'images/14.jpg',
+            'images/15.jpg',
+            'images/16.jpg',
+            'images/17.jpg',
+            'images/18.jpg',
+            // Add more image paths here
+        ];
+
+        let currentIndex = 0;
+
+        function openLightbox(index) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            currentIndex = index;
+            lightboxImg.src = images[currentIndex];
+            lightbox.style.display = 'flex';
+        }
+
+        function closeLightbox(event) {
+            // Close lightbox only if clicking outside the image or buttons
+            if (event.target.classList.contains('lightbox')) {
+                const lightbox = document.getElementById('lightbox');
+                lightbox.style.display = 'none';
+            }
+        }
+
+        function changeImage(step, event) {
+            event.stopPropagation(); // Prevent lightbox from closing
+            currentIndex = (currentIndex + step + images.length) % images.length;
+            const lightboxImg = document.getElementById('lightbox-img');
+            lightboxImg.src = images[currentIndex];
+        }
+    </script>
+</body>
+</html>

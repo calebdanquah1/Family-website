@@ -1,0 +1,77 @@
+nav {
+  justify-content:flex-end;
+  display: flex;
+  position: absolute;
+  padding: 10px 20px;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+nav a  {
+  color: black;               
+  text-decoration: none;      
+  padding: 10px 15px;       
+  display: inline-block;      
+  font-size: 16px;           
+  font-weight: bold;
+ 
+}
+nav a:hover {
+  background-color:white;    
+  border-radius: 5px;         
+  transition: 0.3s;          
+}
+
+header {
+  background-color:peachpuff ;
+padding: 10rem;
+height: 30px;
+background-image: url('sticker 3.webp');
+background-repeat: no-repeat;
+}
+header img{
+  
+    float: right;
+    margin-left: 10px; /* Add some spacing to the left of the image */
+
+}
+.hero {
+  background-size: cover;
+  background-position: center;
+  height: 400px; /* Adjust height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: black;
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: #ff6f61; /* Bright color for the button */
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.cta-button:hover {
+  background-color: #e65a50; /* Darker shade on hover */
+}

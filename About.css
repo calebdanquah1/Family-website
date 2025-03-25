@@ -1,0 +1,57 @@
+body {
+  
+  margin: 0;
+  padding: 0;
+  color: #333;
+  line-height: 1.6;
+  font-style: inherit;
+  font-size: 20px;
+}
+p{
+  font-weight: 100px;
+  font-style: oblique;
+  
+  
+}
+
+header {
+
+  color: #130101;
+  padding: 20px;
+  text-align: center;
+  background-color: peachpuff;
+}
+
+header h2 {
+  margin: 0;
+}
+
+nav {
+  justify-content:flex-end;
+  display: flex;
+  position: absolute;
+  padding: 10px 20px;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+nav a  {
+  color: black;               /* Black text */
+  text-decoration: none;      /* Removes underline */
+  padding: 10px 15px;        /* Adds space around the links */
+  display: inline-block;      /* Ensures proper spacing */
+  font-size: 16px;           /* Sets font size */
+  font-weight: bold;
+ 
+}
+nav a:hover {
+  background-color:white;    /* Darker background on hover */
+  border-radius: 5px;        /* Adds rounded corners */
+  transition: 0.3s;          /* Smooth transition effect */
+}
+.member img {
+  width: 500px; /* Adjust the width as needed */
+  height: 500px; /* Maintains the aspect ratio */
+  
+}
