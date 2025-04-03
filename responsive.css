@@ -81,14 +81,14 @@ header img {
 /* 🌟 Responsive Design (Media Queries) */
 
 /* Small screens (mobile) */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   nav {
     justify-content: center;
     position: relative;
   }
   nav a {
     display: block;
-    text-align: center;
+    text-align: right;
     padding: 10px;
   }
   header {
