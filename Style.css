@@ -101,7 +101,7 @@ header img{
 /* Header - Reduce padding and adjust height */
 @media (max-width: 768px) {
   header {
-    padding: 3rem;
+    padding: 5rem;
     height: auto;
     text-align: center;
     background-size: contain;
@@ -126,6 +126,7 @@ header img{
     width: 100%;
     height: auto;
     display: block;
+    float:right;
   }
 }
 
