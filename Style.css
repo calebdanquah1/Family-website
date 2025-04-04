@@ -86,8 +86,12 @@ html, body {
 /* Small screens (mobile) */
 @media (max-width: 768px) {
   nav {
-    justify-content: center;
-    position: relative;
+  display: flex;
+  position: absolute;
+  padding: 10px 20px;
+  top: 0;
+  right: 0;
+  left: 0;
   }
   nav a {
     display: block;
