@@ -78,7 +78,7 @@ header img{
 /* 🌟 Responsive Design (Media Queries) */
 
 /* Small screens (mobile) */
-@media (max-width: 990px) {
+@media (max-width: 768px) {
  nav {
     justify-content: center;
     position: relative;
