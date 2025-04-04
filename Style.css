@@ -103,9 +103,8 @@ html, body {
     text-align: center;
   }
   header img {
-    float: none;
-    display: block;
-    margin: 0 auto;
+     float: right;
+    margin-left: 10px;
   }
   .hero {
     height: auto;
