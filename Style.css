@@ -122,7 +122,7 @@ header img{
     background: rgba(255, 255, 255, 0.7); /* Add contrast to text */
     padding: 10px;
   }
-  .hero img {
+  img {
     width: 100%;
     height: auto;
     display: block;
