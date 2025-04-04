@@ -1,155 +1,67 @@
-nav {
-  justify-content:flex-end;
-  display: flex;
-  position: absolute;
-  padding: 10px 20px;
-  top: 0;
-  right: 0;
-  left: 0;
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-nav a  {
-  color: black;               
-  text-decoration: none;      
-  padding: 10px 15px;       
-  display: inline-block;      
-  font-size: 16px;           
-  font-weight: bold;
- 
-}
-nav a:hover {
-  background-color:white;    
-  border-radius: 5px;         
-  transition: 0.3s;          
+/* Ensure full-width scaling */
+body {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
 }
 
+/* Fix header height issue */
 header {
-  background-color:peachpuff ;
-padding: 10rem;
-height: 30px;
-background-image: url('sticker 3.webp');
-background-repeat: no-repeat;
-}
-header img{
-  
-    float: right;
-    margin-left: 10px; /* Add some spacing to the left of the image */
-
-}
-.hero {
-  background-size: cover;
-  background-position: center;
-  height: 400px; /* Adjust height as needed */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: peachpuff;
+  padding: 2rem; /* Reduce padding to fit mobile */
   text-align: center;
-  color: black;
 }
 
-.hero-content {
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
-
-.cta-button {
-  background-color: #ff6f61; /* Bright color for the button */
-  color: black;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 1rem;
-}
-.cta-button:hover {
-  background-color: #e65a50; /* Darker shade on hover */
-}
-
-/* 🌟 Responsive Design (Media Queries) */
-/* Ensure the page scales properly on all devices */
-html, body {
-    width: 100%;
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-}
-/* Small screens (mobile) */
-@media (max-width: 768px) {
-  nav {
+/* Navigation Bar */
+nav {
   display: flex;
-  position: absolute;
-  padding: 10px 20px;
-  top: 0;
-  right: 0;
-  left: 0;
+  flex-wrap: wrap;
+  justify-content: center; /* Center on mobile */
+  align-items: center;
+  padding: 10px;
+  position: relative; /* Prevent overlap issues */
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  display: block; /* Stack links on smaller screens */
+}
+
+/* Responsive Design for iPhone 11 (Max width: 828px) */
+@media (max-width: 828px) {
+  header {
+    padding: 1rem;
   }
+
+  nav {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 0;
+  }
+
   nav a {
-    display: block;
-    text-align: center;
-    padding: 10px;
+    font-size: 14px;
+    padding: 8px 12px;
   }
-  header {
-    padding: 5rem;
-    text-align: center;
-  }
-  header img {
-     float: right;
-    margin-left: 10px;
-  }
+
   .hero {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .hero img {
+    max-width: 100%;
     height: auto;
-    padding: 50px 20px;
-  }
-  .hero h1 {
-    font-size: 2rem;
-  }
-  .hero p {
-    font-size: 1rem;
   }
 }
-
-/* Medium screens (tablets) */
-@media (max-width: 1024px) {
-  header {
-    padding: 8rem;
-  }
-  .hero {
-    height: 300px;
-  }
-  .hero h1 {
-    font-size: 2.2rem;
-  }
-  .hero p {
-    font-size: 1.1rem;
-  }
-}
-
-/* Large screens (desktops) */
-@media (min-width: 1200px) {
-  .hero {
-    height: 500px;
-  }
-}
-
-
-  
-
-
-  
- 
-
-
-
-
-
-
