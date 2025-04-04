@@ -76,14 +76,19 @@ header img{
   background-color: #e65a50; /* Darker shade on hover */
 }
 
+
+
 /* Responsive adjustments */
 
-/* Navigation - Adjust font size for smaller screens */
+/* Navigation - Adjust font size and layout for mobile */
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    position: relative;
+    background: rgba(255, 255, 255, 0.8); /* Add background for readability */
+    padding: 10px;
   }
   nav a {
     display: block;
@@ -95,20 +100,31 @@ header img{
 /* Header - Reduce padding and adjust height */
 @media (max-width: 768px) {
   header {
-    padding: 5rem;
+    padding: 3rem;
     height: auto;
     text-align: center;
+    background-size: contain;
   }
 }
 
-/* Hero Section - Adjust height for smaller screens */
+/* Hero Section - Adjust height and fix image overlap */
 @media (max-width: 768px) {
   .hero {
     height: auto;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .hero-content {
     font-size: 14px;
+    background: rgba(255, 255, 255, 0.7); /* Add contrast to text */
+    padding: 10px;
+  }
+  .hero img {
+    width: 100%;
+    height: auto;
+    display: block;
   }
 }
 
@@ -117,13 +133,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-
-
-
-
-
-
-
 
 
 
