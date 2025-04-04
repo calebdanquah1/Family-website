@@ -75,3 +75,55 @@ header img{
 .cta-button:hover {
   background-color: #e65a50; /* Darker shade on hover */
 }
+
+/* Responsive adjustments */
+
+/* Navigation - Adjust font size for smaller screens */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  nav a {
+    display: block;
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+/* Header - Reduce padding and adjust height */
+@media (max-width: 768px) {
+  header {
+    padding: 5rem;
+    height: auto;
+    text-align: center;
+  }
+}
+
+/* Hero Section - Adjust height for smaller screens */
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding: 20px;
+  }
+  .hero-content {
+    font-size: 14px;
+  }
+}
+
+/* Make images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+
