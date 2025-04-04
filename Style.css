@@ -77,58 +77,99 @@ header img{
 
 /* 🌟 Responsive Design (Media Queries) */
 
-/* Small screens (mobile) */
+/* Base styles (applies to all screens) */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f8f8f8;
+  padding: 10px;
+}
+
+nav a {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+header {
+  padding: 2rem;
+  text-align: center;
+}
+
+.hero {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Small screens (mobile) - Most important for your request */
 @media (max-width: 768px) {
- nav {
-    justify-content: center;
-    position: relative;
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
   }
+  
   nav a {
     display: block;
+    width: 100%;
     text-align: center;
-    padding: 10px;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
   }
+  
   header {
-    padding: 5rem;
-    text-align: center;
+    padding: 1.5rem;
   }
-  header img {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
+  
   .hero {
-    height: auto;
-    padding: 50px 20px;
+    padding: 30px 15px;
   }
+  
   .hero h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
   }
+  
   .hero p {
     font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  /* Add this if you have a "Meet the Family" button */
+  .btn {
+    display: block;
+    width: 80%;
+    max-width: 200px;
+    margin: 20px auto;
+    padding: 10px;
   }
 }
 
 /* Medium screens (tablets) */
-@media (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   header {
-    padding: 8rem;
+    padding: 4rem;
   }
+  
   .hero {
-    height: 300px;
-  }
-  .hero h1 {
-    font-size: 2.2rem;
-  }
-  .hero p {
-    font-size: 1.1rem;
+    padding: 40px;
   }
 }
 
 /* Large screens (desktops) */
-@media (min-width: 1200px) {
+@media (min-width: 1025px) {
+  nav {
+    justify-content: center;
+  }
+  
+  header {
+    padding: 6rem;
+  }
+  
   .hero {
-    height: 500px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
   }
 }
 
