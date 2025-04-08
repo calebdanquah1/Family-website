@@ -136,9 +136,12 @@ header img{
   background-color: #e65a50; /* Darker shade on hover */
 }
   img {
-    padding:7rem;
-    height: 100px;
-    
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding:7 rem
+    height: 250px;
+  
   }
 }
 
