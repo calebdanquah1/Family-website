@@ -124,18 +124,10 @@ header img{
     padding: 10px;
   }
   img {
-    width: 100%;
-    height: auto;
-    display: block;
-    float:none;
+    padding:5rem;
+    height: 10px;
+    
   }
-
-
-/* Make images responsive */
-img {
-  max-width: 100%;
-  height: auto;
-}
 }
 
 
