@@ -123,9 +123,21 @@ header img{
     background-color: rgba(255, 255, 255, 0.7); /* Add contrast to text */
     padding: 10px;
   }
+  .cta-button {
+  background-color: #ff6f61; /* Bright color for the button */
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.cta-button:hover {
+  background-color: #e65a50; /* Darker shade on hover */
+}
   img {
-    padding:5rem;
-    height: 10px;
+    padding:7rem;
+    height: 100px;
     
   }
 }
