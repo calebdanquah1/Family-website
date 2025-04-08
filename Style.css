@@ -96,20 +96,20 @@ header img{
     font-size: 9px;
     padding: 5px;
   }
-}
+
 
 /* Header - Reduce padding and adjust height */
-@media (max-width: 768px) {
+
   header {
     padding: 5rem;
     height: 15px;
     text-align: center;
     background-size: contain;
   }
-}
+
 
 /* Hero Section - Adjust height and fix image overlap */
-@media (max-width: 768px) {
+
   .hero {
     height: auto;
     padding: 20px;
@@ -129,12 +129,13 @@ header img{
     display: block;
     float:none;
   }
-}
+
 
 /* Make images responsive */
 img {
   max-width: 100%;
   height: auto;
+}
 }
 
 
