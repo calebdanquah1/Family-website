@@ -138,9 +138,8 @@ header img{
   img {
     position: absolute;
     right: 0;
-    bottom: 0;
-    padding:6rem
-    height: 25px;
+    padding:4rem
+    height: 15px;
   
   }
 }
