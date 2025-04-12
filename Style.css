@@ -75,74 +75,9 @@ header img{
 .cta-button:hover {
   background-color: #e65a50; /* Darker shade on hover */
 }
+img{
+  float: right;
 
-
-
-/* Responsive adjustments */
-
-/* Navigation - Adjust font size and layout for mobile */
-@media (max-width: 768px) {
-  nav {
-   justify-content:flex-end;
-  display: flex;
-  position: absolute;
-  padding: 5px 10px;
-  top: 0;
-  right: 0;
-  left: 0;
-  }
-  nav a {
-    display: block;
-    font-size: 9px;
-    padding: 5px;
-  }
-
-
-/* Header - Reduce padding and adjust height */
-
-  header {
-    padding: 5rem;
-    height: 15px;
-    text-align: center;
-    background-size: contain;
-  }
-
-
-/* Hero Section - Adjust height and fix image overlap */
-
-  .hero {
-    height: auto;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color:black;
-  }
-  .hero-content {
-    font-size: 14px;
-    background-color: rgba(255, 255, 255, 0.7); /* Add contrast to text */
-    padding: 10px;
-  }
-  .cta-button {
-  background-color: #ff6f61; /* Bright color for the button */
-  color: black;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 1rem;
-}
-
-.cta-button:hover {
-  background-color: #e65a50; /* Darker shade on hover */
-}
-  img {
-    position: absolute;
-    right: 0;
-    padding:4rem
-    height: 15px;
-  
-  }
-}
 
 
 
