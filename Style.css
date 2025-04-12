@@ -82,8 +82,8 @@ img{
 
   /* CSS for screens below or equal to 600px wide */
   div {
-    height: 400px;
-    width: 200px;
+    height: 390px;
+    width: 240px;
   }
   img{
     height: 450px;
@@ -91,7 +91,7 @@ img{
   }
   header {
     background-color:peachpuff ;
-  padding: 10rem;
+  padding: 5rem;
   height: 10px;
   background-image: url('sticker 3.webp') ;
   background-repeat: no-repeat;
