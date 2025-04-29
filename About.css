@@ -55,3 +55,59 @@ nav a:hover {
   height: 500px; /* Maintains the aspect ratio */
   
 }
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  nav {
+    flex-direction: row;
+    align-items: center;
+    position: static; /* Prevents layout breaking on small screens */
+    padding: 15px 0;
+  }
+
+  nav a {
+    padding: 8px;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+  }
+
+  .member img {
+    width: 100%;
+    height: auto;
+  }
+
+  .member {
+    margin-bottom: 30px;
+    padding: 0 10px;
+  }
+
+  header {
+    padding: 15px 10px;
+  }
+
+  .about-section,
+  .family-members,
+  .family-values {
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.2rem;
+  }
+
+  footer p {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+
+
+
+
